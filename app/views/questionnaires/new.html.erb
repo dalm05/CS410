@@ -1,0 +1,12 @@
+<h1>New Questionnaire</h1>
+<%= simple_form_for(@questionnaire) do |f| %>
+    <%= f.error_notification %>
+	<%= f.input :course %>
+    <%= f.input :section, collection: 1..10 %>  
+    <%= f.input :instructor %>
+     <%= f.error :base %>	  
+	 <%= f.button :submit %>
+	 <% end %>	 
+	  
+ 
+	

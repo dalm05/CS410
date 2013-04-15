@@ -1,0 +1,18 @@
+<h3>Add Question</h3>
+<%= simple_form_for(@selection) do |f| %>
+    <%= f.error_notification %>
+	<%= f.input :question %>  
+	<%= f.input :choice%> 
+	  <%= f.error :base %>		  
+	  <%= f.button :submit %>
+	<% end %>
+	
+	or
+	
+<%= simple_form_for(@questionnaire) do |f| %>
+    <%= f.error_notification %>
+	<%= f.input :question %>  
+	<%= f.input :choice, as Text%> 
+	  <%= f.error :base %>		  
+	  <%= f.button :submit %>
+	<% end %>

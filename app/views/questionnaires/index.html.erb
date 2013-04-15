@@ -1,0 +1,11 @@
+<h2>Smart Bubble Admin</h2>
+
+<% @questionnaires.each do |questionnaire| %>
+  <div class="questionnaire">
+    <%= link_to questionnaire.course, questionnaire %>
+    
+  </div>
+<% end %>
+
+<p><%= link_to "Create new questionnaire", new_questionnaire_path %></p>
+<p><%= link_to "Add question to questionnaire", questionnaires_edit_path %></p>

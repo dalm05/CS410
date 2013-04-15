@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-SmartBubble::Application.config.secret_token = 'ac07c6d6d175edb8cf73286174744bb4ca09ad9f715c217e01742e12a9550b4b289acd29a46a660e30ad050e9600742b3737f19056e466b76a1ce5c6ad4c74e4'
+Store::Application.config.secret_token = '4122882dd0dec749308315eba2b6a98cc0b1839e6ce291c94569a7fcf37acc5730ae26b37d5deb410f827986ed851dfa54887337fb3eecc8031db7b917ba7a0e'

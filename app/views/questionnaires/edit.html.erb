@@ -1,0 +1,8 @@
+<h1>Editing Questionnaire</h1>
+<% @questionnaire.id %>
+<% @questionnaire.course %>
+<% @questionnaire.section %>
+<% @questionnaire.instructor %>
+
+<p><%= link_to "Add Question", questionnaires_add_path %></p>
+<p><%= link_to "Add Choice", selections_new_path %></p>

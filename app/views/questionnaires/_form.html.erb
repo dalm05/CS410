@@ -1,0 +1,12 @@
+<%= simple_form_for(@questionnaire) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :question %>
+  <%= f.input :questionType, collection: ["Bullet", "Comment"] %>
+  <%= f.input :response, collection: @options, as: :radio_buttons %>
+  <%= f.input :course %>
+  <%= f.input :section, collection: 1..10 %>  
+  <%= f.input :instructor %>  
+  <%= f.error :base %>
+  
+  <%= f.button :submit %>
+<% end %>

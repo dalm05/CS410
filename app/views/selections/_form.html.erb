@@ -1,0 +1,7 @@
+<%= simple_form_for(@selection) do |f| %>
+  <%= f.error_notification %>   
+  <%= f.input :question %>
+  <%= f.input :choice %>   
+  <%= f.error :base %>
+  <%= f.button :submit %>
+<% end %>

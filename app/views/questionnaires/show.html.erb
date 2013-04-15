@@ -1,0 +1,22 @@
+<h1><%= @questionnaire.instructor %></h1>
+
+<p>
+  <b>question:</b>
+  <h3><%= @questionnaire.question %></h3>
+</p>
+
+<p>
+  <b>Course:</b>
+  <%= @questionnaire.course %>
+</p>
+
+<p>
+  <b>Section:</b>
+  <%= @questionnaire.section %>
+</p>
+
+<p>
+  <b>Response:</b>
+  <%= @questionnaire.response %>
+</p>
+<%= link_to 'Back', new_questionnaire_path %>
